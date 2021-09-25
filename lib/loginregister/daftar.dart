@@ -166,34 +166,36 @@ class _DaftarState extends State<Daftar> {
               SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Sudah Punya Akun?",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Color(0xff53BC3D),
-                    ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  InkWell(
-                    child: Text(
-                      "Masuk",
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Sudah Punya Akun?",
                       style: TextStyle(
                         fontSize: 12,
-                        fontWeight: FontWeight.bold,
                         color: Color(0xff53BC3D),
                       ),
                     ),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Login()));
-                    },
-                  ),
-                ],
+                    SizedBox(
+                      width: 5,
+                    ),
+                    InkWell(
+                      child: Text(
+                        "Masuk",
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff53BC3D),
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Login()));
+                      },
+                    ),
+                  ],
+                ),
               )
             ],
           ),
