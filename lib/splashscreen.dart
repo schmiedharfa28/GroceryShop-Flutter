@@ -41,7 +41,7 @@ class _SplashscreenState extends State<Splashscreen> {
                 "Fruge",
                 style: TextStyle(
                     fontSize: 20,
-                    
+                    fontFamily: 'Poppins',
                     fontWeight: FontWeight.bold),
               )
             ],
